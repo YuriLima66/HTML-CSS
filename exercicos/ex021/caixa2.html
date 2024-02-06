@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags </title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: dimgray;
+           
+        }
+        header, main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 5px solid whitesmoke;
+            box-shadow: 2px 2px 2px black;; 
+            border-radius: 3px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 5px -10px 5px -10px ;
+        }
+        footer > p{
+            margin: 1px;
+        }
+        h1,h2{
+            text-align: center;
+            text-shadow: 2px 2px whitesmoke ;
+        }
+        nav>a:hover{
+            font-size: 110%;
+            background-color: rgb(51, 51, 51);
+            color: white;
+            padding: 3px;  
+            box-shadow: 2px 2px 2px dimgray;    
+        }
+        a:hover{
+            font-size: 110%;
+        }
+        a:active{
+            color: red;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .link_footer{
+            color: white;
+        }
+         aside{
+            text-align: right;
+            font-style: italic;
+        }
+        .texto_principal{
+            text-align: justify;
+            text-indent: 30px;
+        }
+        article > aside{
+            background-color: rgba(197, 197, 197, 0.877);
+        }
+        nav>a{
+            margin-right: 25px;
+            text-align: center;
+        }
+        nav>p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+            <nav>
+                
+                    <a href="#" target="_blank" title=" clika vai">Esportes</a>
+                    <a href="#" target="_blank" title=" clika vai">Tecnologias</a>
+                    <a href="#" target="_blank" title=" clika vai">Variedades</a>
+                    <a href="#" target="_blank" title=" clika vai">Curiosidades</a>
+                    <a href="#" target="_blank" title=" clika vai">Economia</a>
+            </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                     <p class="texto_principal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta sed cumque atque tempora a consequuntur commodi ipsum dolores quaerat? Optio, quibusdam debitis. Libero deleniti vero commodi exercitationem quod nulla magni! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, molestiae libero ullam fugit labore officia, voluptatibus atque nostrum quam omnis dicta? Quidem explicabo dolorem ipsam, in tenetur numquam accusantium itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aperiam sint eaque hic natus molestiae possimus est exercitationem aut nemo reprehenderit corporis nisi assumenda cupiditate quasi alias facere, quas culpa. 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur ex corrupti maiores delectus ipsum minus dolores impedit. Autem, et animi dolor perspiciatis porro ullam soluta at. Qui alias illo ullam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio necessitatibus quasi debitis quaerat a facere libero sit? Ratione eius ad voluptatibus porro dignissimos quidem fugit! Perferendis sit expedita officiis inventore.</p>
+                <aside>         
+                    <p>artigo escrito por <a href="https://www.linkedin.com.br" target="_blank" title="Linkedin" >Yuri Lima</a></p>
+                </aside>
+            </article>
+            <article>
+            </article>
+        </section>
+    </main>
+<footer>
+    <p>Desenvolvido por <a class="link_footer" href="https://www.linkedin.com.br" target="_blank" title="Linkedin" >Yuri Lima</a></p>
+</footer>
+</body>
+</html>

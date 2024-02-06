@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > li{
+            text-align: left;
+            display: none;
+        }
+        div:hover>li{
+            font-size: 150%;
+            display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgb(194, 192, 192);
+            width: 300px;
+           
+        }
+        div:hover{
+            color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>passe o mouse sobre o exemplo abaixo</p>
+    <div>
+        <ul>passe o mouse aqui</ul>
+        <li>comidas</li>
+        <li>bebidas</li>
+        <li><a href="pseudoclasse.html" title="clique aqui" target="_blank">sobremesas</a></li>
+    </div>
+    <p>fim do exemplo</p>
+    
+</body>
+</html>
