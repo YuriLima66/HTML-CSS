@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Carrinho</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Meu Carrinho</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Continuar Comprando</a></li> <!-- Link para retornar à página de produtos -->
+      <li><button onclick="limparCarrinho()">Limpar Carrinho</button></li> <!-- Botão para limpar o carrinho -->
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="carrinho">
+    <h2>Itens no Carrinho</h2>
+    <ul id="listaItens">
+      <!-- Os itens do carrinho serão adicionados dinamicamente aqui -->
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Minha Loja Online. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// Função para exibir os itens do carrinho na página
+function exibirItensCarrinho() {
+  const listaItens = document.getElementById('listaItens');
+  listaItens.innerHTML = ''; // Limpa a lista antes de adicionar os itens
+
+  // Itera sobre os itens do carrinho e os adiciona à lista
+  for (let item in carrinhoItens) {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${item}: ${carrinhoItens[item]}`;
+    listaItens.appendChild(listItem);
+  }
+}
+
+// Exibe os itens do carrinho ao carregar a página
+window.onload = exibirItensCarrinho;
+</script>
+</body>
+</html>
