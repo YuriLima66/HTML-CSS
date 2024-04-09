@@ -7,28 +7,37 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            shorthand background 
+              color > image > position > repeat > [size] > attachment
+              */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;/*na documentação mostra que funciona mas na pratica não, recomenda-se então em especificar o size separadamente*/
 
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px ;
             margin: auto;
             border: 1px solid darkcyan;
             border-radius: 15px;
 
         }
+        p{
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de imagem de fundo </h1>
-        <p>Nesse exercicio aprendi a usar a tag contain para fazer com que a imagem se adapte bem a qualquer viewport, como por exemplo nessa tela. Código que foi usado abaixo <br><br>
+        <p>Nesse exercicio aprendi a usar a tag contain para fazer com que a imagem se adapte bem a qualquer viewport, como por exemplo nessa tela. tambem utilizamos o background-attachment: fixed para fixarmos a imagem de fundo, assim podemos rolar nosso texto sem duplicar imagem com uma estetica bem interessante. Código que foi usado abaixo <br><br>
             body{<br>
                 height: 100vh;<br>
                 background-color: black;<br>
@@ -36,15 +45,18 @@
                 background-position: center top;<br>
                 background-repeat: no-repeat;<br>
                 background-size: cover;<br>
+                background-attachment: fixed;<br>
     
             }<br>
             main{<br>
                 background-color: white;<br>
-                width: 400px;<br>
+                max-width: 400px;<br>
                 padding: 10px ;<br>
                 margin: auto;<br>
                 border: 1px solid darkcyan;<br>
-                border-radius: 15px;<br>
+                border-radius: 15px;<br><br><br><br><br>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure commodi, laborum magni distinctio quaerat quae ducimus totam animi fugiat labore assumenda consectetur fugit nihil tempora est unde. Nobis, praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur architecto quisquam quia placeat. Ex facilis, eius illo maiores deserunt officiis libero quibusdam nihil repudiandae nostrum cupiditate laudantium, repellendus hic!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tenetur cumque magnam quaerat odit, est numquam tempore laborum saepe nam, optio officiis ullam quo temporibus accusamus iusto quia vel? Distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor aperiam placeat deserunt porro velit labore quo aut impedit fugiat. Nemo corporis neque impedit facere! Voluptates commodi consequuntur at sapiente.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum corrupti nam error unde iste, sequi dolores aperiam magnam deleniti atque porro ratione, iure, ullam vel cum quo ut. Voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, deleniti tempore. Nisi temporibus nobis reiciendis quae? Ducimus quas dolores nostrum sapiente deleniti, eius natus quidem, facere doloremque soluta ipsa quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure commodi, laborum magni distinctio quaerat quae ducimus totam animi fugiat labore assumenda consectetur fugit nihil tempora est unde. Nobis, praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur architecto quisquam quia placeat. Ex facilis, eius illo maiores deserunt officiis libero quibusdam nihil repudiandae nostrum cupiditate laudantium, repellendus hic!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tenetur cumque magnam quaerat odit, est numquam tempore laborum saepe nam, optio officiis ullam quo temporibus accusamus iusto quia vel? Distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor aperiam placeat deserunt porro velit labore quo aut impedit fugiat. Nemo corporis neque impedit facere! Voluptates commodi consequuntur at sapiente.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum corrupti nam error unde iste, sequi dolores aperiam magnam deleniti atque porro ratione, iure, ullam vel cum quo ut. Voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, deleniti tempore. Nisi temporibus nobis reiciendis quae? Ducimus quas dolores nostrum sapiente deleniti, eius natus quidem, facere doloremque soluta ipsa quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure commodi, laborum magni distinctio quaerat quae ducimus totam animi fugiat labore assumenda consectetur fugit nihil tempora est unde. Nobis, praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur architecto quisquam quia placeat. Ex facilis, eius illo maiores deserunt officiis libero quibusdam nihil repudiandae nostrum cupiditate laudantium, repellendus hic!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tenetur cumque magnam quaerat odit, est numquam tempore laborum saepe nam, optio officiis ullam quo temporibus accusamus iusto quia vel? Distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor aperiam placeat deserunt porro velit labore quo aut impedit fugiat. Nemo corporis neque impedit facere! Voluptates commodi consequuntur at sapiente.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum corrupti nam error unde iste, sequi dolores aperiam magnam deleniti atque porro ratione, iure, ullam vel cum quo ut. Voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, deleniti tempore. Nisi temporibus nobis reiciendis quae? Ducimus quas dolores nostrum sapiente deleniti, eius natus quidem, facere doloremque soluta ipsa quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure commodi, laborum magni distinctio quaerat quae ducimus totam animi fugiat labore assumenda consectetur fugit nihil tempora est unde. Nobis, praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur architecto quisquam quia placeat. Ex facilis, eius illo maiores deserunt officiis libero quibusdam nihil repudiandae nostrum cupiditate laudantium, repellendus hic!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tenetur cumque magnam quaerat odit, est numquam tempore laborum saepe nam, optio officiis ullam quo temporibus accusamus iusto quia vel? Distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor aperiam placeat deserunt porro velit labore quo aut impedit fugiat. Nemo corporis neque impedit facere! Voluptates commodi consequuntur at sapiente.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum corrupti nam error unde iste, sequi dolores aperiam magnam deleniti atque porro ratione, iure, ullam vel cum quo ut. Voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, deleniti tempore. Nisi temporibus nobis reiciendis quae? Ducimus quas dolores nostrum sapiente deleniti, eius natus quidem, facere doloremque soluta ipsa quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure commodi, laborum magni distinctio quaerat quae ducimus totam animi fugiat labore assumenda consectetur fugit nihil tempora est unde. Nobis, praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur architecto quisquam quia placeat. Ex facilis, eius illo maiores deserunt officiis libero quibusdam nihil repudiandae nostrum cupiditate laudantium, repellendus hic!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tenetur cumque magnam quaerat odit, est numquam tempore laborum saepe nam, optio officiis ullam quo temporibus accusamus iusto quia vel? Distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor aperiam placeat deserunt porro velit labore quo aut impedit fugiat. Nemo corporis neque impedit facere! Voluptates commodi consequuntur at sapiente.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum corrupti nam error unde iste, sequi dolores aperiam magnam deleniti atque porro ratione, iure, ullam vel cum quo ut. Voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, deleniti tempore. Nisi temporibus nobis reiciendis quae? Ducimus quas dolores nostrum sapiente deleniti, eius natus quidem, facere doloremque soluta ipsa quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure commodi, laborum magni distinctio quaerat quae ducimus totam animi fugiat labore assumenda consectetur fugit nihil tempora est unde. Nobis, praesentium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente consequuntur architecto quisquam quia placeat. Ex facilis, eius illo maiores deserunt officiis libero quibusdam nihil repudiandae nostrum cupiditate laudantium, repellendus hic!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam tenetur cumque magnam quaerat odit, est numquam tempore laborum saepe nam, optio officiis ullam quo temporibus accusamus iusto quia vel? Distinctio?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor aperiam placeat deserunt porro velit labore quo aut impedit fugiat. Nemo corporis neque impedit facere! Voluptates commodi consequuntur at sapiente.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nostrum corrupti nam error unde iste, sequi dolores aperiam magnam deleniti atque porro ratione, iure, ullam vel cum quo ut. Voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, deleniti tempore. Nisi temporibus nobis reiciendis quae? Ducimus quas dolores nostrum sapiente deleniti, eius natus quidem, facere doloremque soluta ipsa quibusdam.
     
             } </p>
     </main>
