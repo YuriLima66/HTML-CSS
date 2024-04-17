@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th,td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+        .nome{
+            background-color: gray;
+        }
+        .grupo{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="nome" span="1">
+            <col class="grupo"span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Genero</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Isabela Cristina</td>
+            <td>F</td>
+            <td>35</td>
+            <td>Cadastradora</td>
+        </tr>
+        <tr>
+            <td>Yuri Lima</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Jady Rani</td>
+            <td>F</td>
+            <td>27</td>
+            <td>Consultora</td>
+        </tr>
+        <tr>
+            <td>Jeane Alves</td>
+            <td>F</td>
+            <td>42</td>
+            <td>Personal Trainer</td>
+        </tr>
+        <tr>
+            <td>Valdineia Pereira</td>
+            <td>F</td>
+            <td>58</td>
+            <td>Empreendedora</td>
+        </tr>
+        <tr>
+            <td>Terezinha de Almeida</td>
+            <td>F</td>
+            <td>70</td>
+            <td>Aposentada</td>
+        </tr>
+    </table>
+</body>
+</html>
