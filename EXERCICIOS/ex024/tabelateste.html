@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Tabelas Grandes</title>
+</head>
+<style>
+    body{
+        background-color: rgba(95, 148, 197, 0.116);
+    }
+    h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    table{
+        margin: auto;
+        width: 1000px;
+        border-collapse: collapse;
+        position: relative;/*importante para manter o titulo fixo para scrollar a tabela*/
+    }
+   
+    td, th{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;/*alinhamento horizontal*/
+        vertical-align: middle;/*alinhamento vertical*/
+
+    }
+    
+    thead, tfoot  {
+        background-color: gray;
+        color: white ;
+    }
+    thead > tr > th{
+        position: sticky;/* faz com que a posição do titulo da tabela fique fixo enquanto voce scrolla a tabela*/
+        top: -1px;/*posição que o titulo vai ficar quando você desce a tabela*/
+        background-color: gray;
+
+    }
+    caption{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+        
+    }
+    td.numero{
+        text-align: right;
+    }
+    tbody > tr:nth-child(odd){
+        background-color: lightgrey;
+    }
+    tbody > tr:nth-child(even){
+        background-color: rgb(255, 255, 255);
+    }
+</style>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+        HIERARQUIA DE TABELAS GRANDES
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas de acordo com o último CENSO(2022). </caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col"> % População Brasil</th>
+                <th scope="col"> País com população equivalente</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo-SP</td>
+                <td class="numero" >45 919 049</td>
+                <td class="numero" >21,9%</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais-MG</td>
+                <td class="numero">20 538 718</td>
+                <td class="numero">10,11%</td>
+                <td> Burquina Fasso</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro-RJ</td>
+                <td class="numero">16 054 524</td>
+                <td class="numero">7,91%</td>
+                <td>Camboja</td>
+            </tr>
+            <tr>
+                <td>Bahia-BA</td>
+                <td class="numero">14 141 626</td>
+                <td class="numero">6,96%</td>
+                <td> Zimbabwe</td>
+            </tr>
+            <tr>
+                <td>Paraná-PR</td>
+                <td class="numero">11 444 380</td>
+                <td class="numero">5,64%</td>
+                <td>Tunísia</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul-RS</td>
+                <td class="numero">10 882 965</td>
+                <td class="numero">5,36%</td>
+                <td>Portugal </td>
+            </tr>
+            <tr>
+                <td>Pernambuco-PE</td>
+                <td class="numero" >9 058 931</td>
+                <td class="numero" >4,46%</td>
+                <td>Áustria</td>
+            </tr>
+            <tr>
+                <td>Ceará-CE</td>
+                <td class="numero">8 794 957</td>
+                <td class="numero">4,33%</td>
+                <td>Papua-Nova Guiné</td>
+            </tr>
+            <tr>
+                <td>Pará-PA</td>
+                <td class="numero">8 121 025</td>
+                <td class="numero">4,1%</td>
+                <td>Suíça</td>
+            </tr> 
+            <tr>
+                <td>Santa Catarina-SC</td>
+                <td class="numero">7 610 361</td>
+                <td class="numero">3,75%</td>
+                <td>Laos</td>
+            </tr> 
+            <tr>
+                <td>Goiás-GO</td>
+                <td class="numero">7 056 495</td>
+                <td class="numero">3,47%</td>
+                <td>Bulgária</td>
+            </tr> 
+            <tr>
+                <td>Maranhão-MA</td>
+                <td class="numero">6 775 805</td>
+                <td class="numero">3,34%</td>
+                <td>Bulgária</td>
+            </tr> 
+            <tr>
+                <td>Paraíba-PB</td>
+                <td class="numero">3 974 687</td>
+                <td class="numero">1,96%</td>
+                <td>Geórgia</td>
+            </tr> 
+            <tr>
+                <td>Amazonas-AM</td>
+                <td class="numero">3 941 613</td>
+                <td class="numero">1,94%</td>
+                <td>Geórgia</td>
+            </tr> <tr>
+                <td>Espírito Santo-ES</td>
+                <td class="numero">3 833 712</td>
+                <td class="numero">1,89%</td>
+                <td>Geórgia</td>
+            </tr> 
+            <tr>
+                <td>Mato Grosso-MT</td>
+                <td class="numero" >3 658 649</td>
+                <td class="numero" >1,8%</td>
+                <td>Geórgia</td>
+            </tr> 
+            <tr>
+                <td>Rio Grande do Norte-RN</td>
+                <td class="numero">3 302 729</td>
+                <td class="numero">1,63%</td>
+                <td>Uruguai</td>
+            </tr> <tr>
+                <td>Piauí-PI</td>
+                <td class="numero" >3 127 683	</td>
+                <td class="numero" >1,54%</td>
+                <td>Mónaco</td>
+            </tr> 
+            <tr>
+                <td> Distrito Federal-DF</td>
+                <td class="numero">2 817 381</td>
+                <td class="numero">1,39%</td>
+                <td>Armênia</td>
+            </tr> 
+            <tr>
+                <td> Mato Grosso do Sul-MS</td>
+                <td class="numero">2 757 013</td>
+                <td class="numero">1,36%</td>
+                <td>Albânia</td>
+            </tr> 
+            <tr>
+                <td>Sergipe-SE</td>
+                <td class="numero">2 209 558</td>
+                <td class="numero">1,09%</td>
+                <td>Gabão</td>
+            </tr> 
+            <tr>
+                <td> Rondônia-RN</td>
+                <td class="numero">1 581 196	</td>
+                <td class="numero">0,78%</td>
+                <td>Bahrein</td>
+            </tr> 
+            <tr>
+                <td> Tocantins-TO</td>
+                <td class="numero">1 511 460</td>
+                <td class="numero">0,74%</td>
+                <td>Guiné Equatorial</td>
+            </tr> 
+            <tr>
+                <td>Acre-AC</td>
+                <td class="numero">830 018</td>
+                <td class="numero">0,41%</td>
+                <td>Comores</td>
+            </tr> 
+            <tr>
+                <td> Amapá-AP</td>
+                <td class="numero">733 759	</td>
+                <td class="numero">0,36%</td>
+                <td> Guiné Equatorial</td>
+            </tr> 
+            <tr>
+                <td>Roraima-RR</td>
+                <td class="numero">636 707</td>
+                <td class="numero">0,31%</td> 
+                <td> Montenegro</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <th scope="row"class="numero">203 062 512</th>
+                <th scope="row">País Comparavel <br> (Habitantes)</th>
+                <th scope="row">Nigéria <br>(218 541 000)</th>
+                
+            </tr>
+
+        </tfoot>
+    </table>
+   
+</body>
+</html>
