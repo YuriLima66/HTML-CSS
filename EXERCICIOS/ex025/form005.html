@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 4</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem" value="F"checked><label for="ifem">Feminino</label>
+            <input type="radio" name="sexo" id="inbin" value="NB" > <label for="inbin">Não Binario</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos </legend>
+            <input type="checkbox" name="esfutebol" id="iesfutebol"checked><label for="iesfutebol"> Futebol</label> <br>
+            <input type="checkbox" name="esvolei" id="iesvolei"><label for="iesvolei"> Vôlei</label> <br>
+            <input type="checkbox" name="esnatacao" id="iesnatacao"><label for="iesnatacao"> Natação</label> <br>
+            <input type="checkbox" name="esrugby" id="iesrugby"><label for="iesrugby"> Rugby</label> <br>
+            <input type="checkbox" name="esmuaythai" id="iesmuaythai"><label for="iesmuaythai"> MuayThai</label> <br>
+            <input type="checkbox" name="escorrida" id="iescorrida"><label for="iescorrida"> Corrida</label> <br> 
+            <input type="checkbox" name="esbasquete" id="iesbasquete"><label for="iesbasquete"> Basquete</label> <br>
+           
+        </fieldset>
+        <!--ESTUDAR MAIS SOBRE RegEx-->
+       
+         <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
