@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+/*TODAS AS DEMAIS MIDIAS*/
+
+/*Typical Device Breakpoints
+----------------------------
+Pequenas Telas: up to 600px
+celulares: 600px até 768px
+tablets: 768px até 992px
+desktop:992px até 1200px
+grandes telas: acima de 1200px
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after{
+        content:"Essa impressão foi feita atraves de um site desenvolvido por Yuri Lima" ;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*tablets: 768px até 992px*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*desktop:992px até 1200px*/
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/*grandes telas: acima de 1200px*/
+@media screen and (min-width:1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
+}
