@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+main {
+  background-color: black;
+}
+
+header {
+  background: url(imagens/neo_quimica_arena_teve_um_mosaico_em_homenagem_1tqb.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  height: 28vh;
+  position: relative;
+}
+
+.gavioes {
+  position: sticky;
+  top: 5px;
+  right: 50%;
+  transform: translate(50%);
+  width: 15vw;
+  max-width: 130px;
+  z-index: 1;
+}
+
+.menuzinho {
+  background-color: black;
+  border-bottom: 3px solid white;
+}
+
+header>nav>ul>li {
+  bottom: 0%;
+  display: inline;
+  position: absolute;
+  text-shadow: 2px 1px black;
+}
+
+.historia {
+  left: 0%;
+}
+
+.estrutura {
+  left: 27%;
+}
+
+.noticias {
+  right: 27%;
+}
+
+.jogos {
+  right: 10%;
+}
+
+li>a {
+  padding: 40px;
+  text-decoration: none;
+  color: white;
+}
+
+header>nav>ul>li>a:hover {
+  font-size: 110%;
+}
+
+.simbolo_menu {
+  height: 30px;
+}
+
+.banner_article {
+  position: absolute;
+  width: 100vw;
+  max-width: 1330px;
+  max-height: 800px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+}
+
+.banner_article:hover {
+  opacity: 1;
+}
+
+.titulos {
+  display: flex;
+  position: relative;
+  opacity: 0;
+  width: 100vw;
+  max-width: 1330px;
+  max-height: 800px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+}
+
+.titulos:hover {
+  opacity: 1;
+  width: 100vw;
+  max-width: 1330px;
+  max-height: 800px;
+  margin-right: 50%;
+  border-radius: 10px;
+}
+
+.sessao_titulos {
+  position: relative;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  font-size: 3em;
+  margin: 10px;
+}
+
+article {
+  background-color: black;
+  position: relative;
+  color: white;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.185);
+  padding: 2% 5%;
+}
+
+#texto_historia>h1 {
+  background-color: white;
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+#texto_historia>h2 {
+  font-size: 1.5em;
+  background-color: white;
+  color: black;
+  border-bottom: 3px solid black;
+
+}
+
+#texto_historia {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  text-align: justify;
+  padding: 5%;
+  width: 60vw;
+  margin: 40px auto;
+}
+
+#texto_historia:hover {
+  box-shadow: 3px 3px 4px rgb(255, 0, 255);
+}
+
+#texto_historia>strong {
+  font-size: larger;
+}
+
+
+.redesocialpai {
+  right: 15px;
+  width: 50px;
+  position: fixed;
+  top: 40%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.733);
+  border-radius: 50px;
+}
+
+.redesocialpai>section>a>img {
+  height: 35px;
+  display: block;
+  margin: 10px 8px;
+}
+
+.redesocialpai>section>a>img:hover {
+  height: 40px;
+}
+
+footer {
+
+  padding: 10px;
+  margin: 0x -20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 3px solid white;
+}
+
+footer>p {
+  text-align: center;
+}
+
+li {
+
+  list-style-type: none;
+  text-decoration: none;
+}
