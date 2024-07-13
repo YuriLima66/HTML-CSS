@@ -27,50 +27,36 @@ header {
   right: 50%;
   transform: translate(50%);
   width: 15vw;
-  max-width: 130px;
+  max-width: 110px;
   z-index: 1;
 }
 
 .menuzinho {
   background-color: black;
   border-bottom: 3px solid white;
+  border-top:  3px solid white;
+  position: absolute;
+  width: 100vw;
+  bottom: 0px;
 }
 
 header>nav>ul>li {
   bottom: 0%;
+  display: flex;
   display: inline;
-  position: absolute;
   text-shadow: 2px 1px black;
-}
+  align-items: center;
+  padding: 0px 60px;}
 
-.historia {
-  left: 0%;
-}
 
-.estrutura {
-  left: 27%;
-}
-
-.noticias {
-  right: 27%;
-}
-
-.jogos {
-  right: 10%;
-}
 
 li>a {
-  padding: 40px;
   text-decoration: none;
   color: white;
 }
 
 header>nav>ul>li>a:hover {
   font-size: 110%;
-}
-
-.simbolo_menu {
-  height: 30px;
 }
 
 .banner_article {
@@ -178,6 +164,14 @@ article {
 
 .redesocialpai>section>a>img:hover {
   height: 40px;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40vw;
+  align-items: flex-start;
 }
 
 footer {
