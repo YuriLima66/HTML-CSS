@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+body {
+  background: black url(imagens/mapa.gif) center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  height: 100vh;
+  width: 100vw;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+.main {
+  width: 70vw;
+  position: absolute;
+}
+
+.pai-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60vw;
+  margin-bottom: 3rem;
+  height: auto;
+}
+
+h1 {
+  position: absolute;
+  font-size: 6rem;
+  text-shadow: 3px 3px black;
+  text-align: center;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.5rem);
+  padding: 1rem;
+  border-radius: 10px;
+  max-height: 9rem;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p, li {
+  font-size: 2rem;
+}
+
+.card {
+  margin-top: 10rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  height: 40rem;
+  width: 30%;
+  backdrop-filter: blur(0.5rem);
+  padding: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: border 0.5s ease-in-out;
+}
+
+.card:hover {
+  border: 4px solid white;
+}
+
+.card .texto {
+  position: relative;
+  top: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  transition: top 0.5s ease-in-out;
+}
+
+.card:hover .texto {
+  top: 0;
+  cursor: pointer;
+}
+
+.personagem {
+  height: 15rem;
+  align-items: center;
+}
+
+.menu_superior {
+  font-size: 4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  width: 12rem;
+  z-index: 1;
+  text-align: left;
+  text-indent: 1rem;
+  height: 100vh;
+  left: 0;
+}
+
+.logo {
+  height: 4.5rem;
+  left: 0.5rem;
+  bottom: 1rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.menu_superior > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 3px;
+}
+
+.menu_superior > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.93);
+  color: black;
+}
+
+footer {
+  position: absolute;
+  bottom: -230vh;
+  background-color: black;
+  padding: 1rem;
+}
+
+footer > h3 > a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+footer > h3 > a:hover {
+  color: rgb(241, 254, 0);
+}
+
+@media (max-width: 1290px) {
+  .card {
+    height: auto; 
+    width: 80%; 
+    margin-top: 5rem;
+  }
+
+  .pai-1 {
+    width: 90vw;
+    transform: translate(5%);
+  }
+
+  h1 {
+    top: 2rem;
+    font-size: 4rem; 
+    padding: 0.5rem; 
+  }
+
+  h3, p, li {
+    font-size: 1.6rem; 
+  }
+
+  .menu_superior {
+    flex-direction: row;
+    font-size: 3rem;
+    width: 100vw;
+    height: auto; 
+    align-items: center; 
+    padding: 1rem 0;
+  }
+
+  .menu_superior > li {
+    margin-right: 1rem;
+  }
+
+  .logo {
+    position: absolute;
+    bottom: -469vh;
+  }
+
+  footer {
+    position: absolute;
+    bottom: -470vh;
+    background-color: black;
+    padding: 1rem;
+    width: 100vw;
+    text-align: center;
+  }
+}
