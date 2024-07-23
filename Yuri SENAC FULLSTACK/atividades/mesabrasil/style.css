@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: black url(img/mesa-brasil-galeria1.jpg) center/cover no-repeat fixed;
+
+}
+
+main {
+    padding: 4%;
+}
+
+.menusuperior {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 100vw;
+    height: 25px;
+    z-index: 1;
+    border-bottom: 2px solid white;
+}
+
+.menusuperior>li>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.texto_principal {
+    backdrop-filter: blur(0.8rem);
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 60vw;
+    margin: auto;
+    padding: 5%;
+    font-size: 18px;
+    border-radius: 15px;
+
+
+}
+
+.texto_principal>h1 {
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.623) 1px 1px 2px;
+}
+
+.texto_principal>p {
+    width: 80%;
+    margin: auto;
+    
+    
+}
+
+.texto_principal>h2 {
+    text-align: center;
+    margin: 20px 10px;
+    background-color: rgba(0, 51, 8, 0.74);
+    color: white;
+    border-radius: 15px;
+    text-shadow: rgba(0, 0, 0, 0.623) 2px 2px 2px;
+}
+
+.texto_principal>h4 {
+    text-align: right;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.747);
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    text-indent: 5%;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+.receitas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    backdrop-filter: blur(0.8rem);
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 60vw;
+    margin-top: 20px;
+    margin: auto;
+    padding: 5%;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.receitas>h2 {
+    font-size: 36px;
+    text-shadow: rgba(0, 0, 0, 0.623) 1px 1px 2px;
+}
+
+.link_receitas {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+
+}
+
+.link_receitas>a {
+    display: flex;
+    background-color: rgb(0, 51, 8);
+    height: auto;
+    width: 35%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+
+    padding: 10px;
+    margin: 0x -20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    border-top: 3px solid white;
+}
+
+footer>p {
+    text-align: center;
+}
+
+footer>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
