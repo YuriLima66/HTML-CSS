@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: "Pixelify Sans", sans-serif;
+
+}
+
+body {
+    background: black url(img/portraittoystory.jpg) center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: auto;
+    width: 100vw;
+    padding: 5%;
+    flex-wrap: wrap;
+
+
+
+}
+
+
+main {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+
+    height: 60vh;
+}
+
+.logo {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 1;
+
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.video {
+    margin: auto;
+}
+
+.content>div {
+    flex-direction: column;
+}
+
+.texto_principal {
+    font-size: 1em;
+    backdrop-filter: blur(0.8rem);
+    padding: 5%;
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+
+
+
+
+
+
+
+}
