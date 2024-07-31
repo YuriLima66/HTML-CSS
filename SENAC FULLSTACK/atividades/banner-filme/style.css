@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "Kosugi Maru", sans-serif;
 
 }
 
@@ -43,6 +46,7 @@ main {
 
 }
 
+
 .content {
     align-items: center;
     justify-content: center;
@@ -54,6 +58,8 @@ main {
 
 .video {
     margin: auto;
+    width: 100%;
+
 }
 
 .content>div {
@@ -65,11 +71,20 @@ main {
     backdrop-filter: blur(0.8rem);
     padding: 5%;
     text-align: center;
+    max-width: 600px;
+    border-radius: 50px;
+}
+.texto_principal:hover{
+    background-color: rgba(0, 0, 0, 0.363);
 }
 
 @media (max-width: 1400px) {
     .content {
         flex-direction: column-reverse;
+    }
+
+    .video {
+        margin-top: 3vh;
     }
 
 
