@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+
+<body>
+    <!-- Atributo Action -->
+    <h1>Formulário</h1>
+    <form action="registro.php" method="get">
+        <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>
+
+        <!-- Atributo Name -->
+        <div>
+            <label>Idade:</label>
+            <input type="text" name="age" />
+        </div>
+
+        <!-- Atributo Label  -->
+        <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age" />
+        </div>
+
+        
+        <!--Select e selected-->
+        
+        <div>
+            <label for="cidade">Selecione sua cidade</label>
+            <select name="cidade">
+                <option value="SP">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="salvador">Salvador</option>
+                <option value="maua" selected>Mauá</option>
+                <option value="sanAndre">Santo Andre</option>
+                <option value="Sãocr">São Cristovão</option>
+                <option value="OuroP ">Ouro Preto</option>
+                <option value="BH">Belo Horizonte </option>
+            </select>
+        </div>
+        
+        <!--multiple-->
+        <div>
+            <label for="acessorios">Selecione os acessorios</label>
+            <select name="acessorios" multiple>
+                <option value="teclado">teclado</option>
+                <option value="fone-ouvido">fone</option>
+                <option value="web">webcam</option>
+                <option value="monitor" selected>monitor</option>
+                <option value="mouse" selected>mouse</option>
+            </select>
+        </div>
+        
+        <!-- textaerea-->
+        <div>
+            <label for="feedback">Deixe seu feedback!</label>
+            <textarea name="feedback" cols="30" rows="5"></textarea>
+        </div>
+        
+        <!-- Fieldset -->
+        <div>
+            <fieldset>
+                <legend>Insira o seu endereço</legend>
+                <label for="rua">Rua:</label>
+                <input type="rua">
+                <label for="bairro">bairro:</label>
+                <input type="bairro">
+                <label for="cidade">Selecione sua cidade</label>
+                <select name="cidade">
+                    <option value="SP">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="salvador">Salvador</option>
+                    <option value="maua" selected>Mauá</option>
+                    <option value="sanAndre">Santo Andre</option>
+                    <option value="Sãocr">São Cristovão</option>
+                    <option value="OuroP ">Ouro Preto</option>
+                    <option value="BH">Belo Horizonte </option>
+                </select>
+            </fieldset>
+        </div>
+        
+        <!--DataList-->
+        <div>
+            <label for="livro">Selecion seu livro </label>
+            <input type="text" list="livros">
+            
+            <datalist id="livros">
+                
+                <option value="Crepusculo"></option>
+                <option value="Pequeno principe"></option>
+                <option value="Mulheres"></option>
+                <option value="Game of Thrones"></option>
+                <option value="Revolução dos bichos"></option>
+                <option value="Alem do bem e do mal"></option>
+                <option value="Colecao Vagalume"></option>
+                
+            </datalist>
+        </div>
+        
+        <!--Password-->
+        <div>
+            <label for="text">Insira seu login</label>
+            <input type="text" name="login">
+            <label for="password">senha</label>
+            <input type="password" name="senha">
+            
+        </div>
+        
+        
+        <!--radio-->
+        
+        <div>
+            <label for="genero">Selecione seu genero:</label>
+            <div class="radio">
+                <input type="radio" value="feminino " name="genero">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="masculino " name="genero">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="nao-binario " name="genero">
+                <label for="nao-binario">Nao-Binario</label>
+            </div>
+            
+        </div>
+        
+        <!-- input checkbox-->
+        <div>
+            <label for="linguas"> que linguas voce vai aprender?</label>
+            <div class="radio">
+                <input type="checkbox" name="linguas" value="ingles"> <label for="ingles">ingles</label>
+                <input type="checkbox" name="linguas" value="frances"> <label for="frances">frances</label>
+                <input type="checkbox" name="linguas" value="portugues"> <label for="portugues">portugues</label>
+                <input type="checkbox" name="linguas" value="latin"> <label for="latin">latin</label>
+                <input type="checkbox" name="linguas" value="espanhol"> <label for="espanhol">espanhol</label>
+            </div>
+        </div>
+        
+        <!-- Data-->
+        
+        <div>
+            <label for="data">Data de Nascimento</label>
+            <input type="date" name="data">
+        </div>
+        
+        <!-- Input File-->
+        
+        <div>
+            <label for="arquivo">Upload o seu curriculo em PDF</label>
+            <input type="file" name="arquivo">
+        </div>
+        
+        <!-- Input number-->
+        
+        <div>
+            <label for="numero">insira a quantidade </label>
+            <input type="number" name="numero" max="15" min="0">
+        </div>
+        
+        <!-- Input email-->
+        
+        <div>
+            <label for="email">insira seu e mail </label>
+            <input type="email" name="email">
+        </div>
+        
+        <!-- atributo value-->
+        
+        <div>
+            <label for="confirmacao">Voce confirma? </label>
+            <input type="text" value="SIM!" name="confirmacao">
+        </div>
+        
+        
+        
+        <!-- Submit-->
+        <input type="submit" value="enviar">
+        
+        <!--Reset DATA-->
+        
+        <input type="reset" value="limpar">
+        
+    </form>
+    
+</body>
+
+</html>
