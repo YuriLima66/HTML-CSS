@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="estilos/style.css" />
+  <title>La Romana Pizzaria</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="menu">
+      <li><img class="logo" src="icone/la romana-Photoroom.png" alt="logo_la_romana" /></li>
+      <li><a href="#">História</a></li>
+      <li><a href="#">Cardápio</a></li>
+      <li><a href="#">Delivery</a></li>
+      <li><a href="#">Contato</a></li>
+      <li>
+        <!-- Carrinho no Menu -->
+        <div id="carrinho-menu"> 
+          <a href="#">
+            <img class="logo_carrinho" src="icone/carrinho.png" alt="logo_carrinho" />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Nosso Cardápio</h1>
+
+      <div id="cardapio">
+        <!-- Cardápio com itens e botões -->
+        <div class="cardapio-item">
+          <span>Margherita</span><span class="preco">R$ 35,00</span>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal1">Mais Infos</button>
+        </div>
+        <div class="cardapio-item">
+          <span>Calabresa</span><span class="preco">R$ 38,00</span>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal2">Mais Infos</button>
+        </div>
+        <div class="cardapio-item">
+          <span>Mussarela</span><span class="preco">R$ 34,00</span>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal3">Mais Infos</button>
+        </div>
+        <div class="cardapio-item">
+          <span>4 Queijos</span><span class="preco">R$ 45,00</span>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal4">Mais Infos</button>
+        </div>
+        <div class="cardapio-item">
+          <span>Frango com Catupiry</span><span class="preco">R$ 42,00</span>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal5">Mais Infos</button>
+        </div>
+      </div>
+
+      <!-- Botão para abrir o carrinho -->
+      <button id="abrirCarrinho" class="btn btn-warning mt-3">Ver Carrinho</button>
+
+      <!-- Carrinho -->
+      <div id="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul id="itensCarrinho"></ul>
+        <p id="totalCarrinho">Total: R$ 0,00</p>
+        <button id="fecharCarrinho" class="btn btn-secondary">Fechar</button>
+      </div>
+    </div>
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel1">Margherita</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://via.placeholder.com/300x200.png" alt="Margherita" class="modal-img">
+            <p>Pizza Margherita com molho de tomate, queijo mussarela, manjericão fresco e azeite de oliva.</p>
+            <button type="button" class="btn btn-success" onclick="addToCart('Margherita', 35)">Adicionar ao Carrinho</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel2">Calabresa</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://via.placeholder.com/300x200.png" alt="Calabresa" class="modal-img">
+            <p>Pizza Calabresa com molho de tomate, queijo mussarela e calabresa fatiada.</p>
+            <button type="button" class="btn btn-success" onclick="addToCart('Calabresa', 38)">Adicionar ao Carrinho</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel3">Mussarela</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://via.placeholder.com/300x200.png" alt="Mussarela" class="modal-img">
+            <p>Pizza Mussarela com molho de tomate, queijo mussarela e orégano.</p>
+            <button type="button" class="btn btn-success" onclick="addToCart('Mussarela', 34)">Adicionar ao Carrinho</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel4">4 Queijos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://via.placeholder.com/300x200.png" alt="4 Queijos" class="modal-img">
+            <p>Pizza 4 Queijos com molho de tomate, mussarela, provolone, gorgonzola e parmesão.</p>
+            <button type="button" class="btn btn-success" onclick="addToCart('4 Queijos', 45)">Adicionar ao Carrinho</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel5" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel5">Frango com Catupiry</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://via.placeholder.com/300x200.png" alt="Frango com Catupiry" class="modal-img">
+            <p>Pizza Frango com Catupiry com molho de tomate, mussarela, frango desfiado e catupiry.</p>
+            <button type="button" class="btn btn-success" onclick="addToCart('Frango com Catupiry', 42)">Adicionar ao
+              Carrinho</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li class="traco"><a href="#">Sobre a Pizza</a></li>
+        <li class="traco"><a href="#">Políticas de Privacidade</a></li>
+        <li class="traco"><a href="#">Fale Conosco</a></li>
+        <li class="traco"><a href="#">Termos de Uso</a></li>
+        <li class="traco" style="border-right: none;"><a href="#">Trabalhe conosco</a></li>
+      </ul>
+      <ul class="patrocinadores">
+        <li><img class="patrocinador" src="icone/icone_ifood.png" alt=""></li>
+        <li><img class="patrocinador" src="icone/icone_rappi.png" alt=""></li>
+
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
